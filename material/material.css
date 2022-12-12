@@ -1,0 +1,266 @@
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-animation-name: body-ann;
+            animation-name: body-ann;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    animation: start-ann;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    box-shadow: inset 10px 10px 20px #ededed;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes start-ann {
+        from {opacity: 0;}
+        to {opacity: 1;}
+}
+
+.herzwill {
+        font-size: 52px;
+        font-weight: 500;
+        width: max-content;
+        font-family: monospace;
+        overflow: hidden;
+        border-right: .15em solid black;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+        animation: typing 3.5s steps(35, start),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+        from { width: 0;}
+        to { width: 60%;}
+}
+
+@keyframes blink-caret {
+        from, to { border-right-color: transparent;}
+        50% { border-right-color: black;}
+}
+
+.aboutinf {
+        margin: 7rem;
+        font-size: 42px;
+        font-weight: 600;
+        border-radius: 10px;;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 50%;
+        animation: aboutinf-ann 4s;
+        animation-fill-mode: forwards;
+
+}
+
+@keyframes aboutinf-ann {
+        from {height: 0px;}
+        to {border-bottom: 5px solid black;height: 375px;}
+        
+}
+
+.rightimg {
+        margin: 5rem;
+        overflow: hidden;
+        border: 5px solid #f45e61;
+        border-radius: 10px;
+        filter: blur(4px);
+        animation: blurimg 4s forwards;
+}
+
+@keyframes blurimg {
+        from {filter: blur(4px);}
+        to {filter: blur(0px);}
+        
+}
+
+@media (max-width: 576px) {
+        .herzwill {
+                display: none;
+                height: 0%;
+        }
+
+        .aboutinf {
+                font-size:30px;
+                margin: 0rem;
+                width: 100%;
+                animation: none;
+        }
+        .rightimg {
+                margin: 0;
+                width: 100%;
+                animation: none;
+                filter: blur(0px);
+
+        }
+}
+
+* {border: 1px solid red;}
+
+.text-1 {
+        width: 70%;
+        font-size: 42px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        margin-top: 10rem;
+        border-radius: 10px;
+        border-bottom: 3px solid black;
+        border-top: 3px solid black;
+        visibility: hidden;
+        overflow: hidden;
+}
+
+.text-1-ann {
+        animation: text-1-ann 2s;
+        animation-fill-mode: forwards;
+
+}
+
+@keyframes text-1-ann {
+        from {
+                height: 0;visibility: hidden; display: none;
+        }
+        to {
+                height: 35rem;visibility: visible;
+        }
+}
+
+@property --angle {
+        syntax: '<angle>';
+        initial-value: 90deg;
+        inherits: true;
+      }
+      
+@property --gradX {
+        syntax: '<percentage>';
+        initial-value: 50%;
+        inherits: true;
+      }
+      
+@property --gradY {
+        syntax: '<percentage>';
+        initial-value: 0%;
+        inherits: true;
+      }
+
+:root {
+	--d: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: #e0dfe6;
+	--c2: #81a073;
+}
+
+.bild-1 {
+        background-color: white;
+        margin: 5rem;
+        border-radius: 10px;
+        border: 0.55rem solid;
+        border-image: conic-gradient(from var(--angle), var(--c2),
+        var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 60;
+        animation: borderRotate var(--d) linear infinite forwards;
+}
+
+.bild-1-ann {
+        animation: bild-1-ann 2s;
+        animation-fill-mode: forwards;
+
+}
+
+@keyframes bild-1-ann {
+        from {
+                visibility: hidden;left: 100rem;
+        }
+        to {
+                visibility: visible;left: 0;
+        }
+}
+
+@keyframes borderRotate {
+        100% {
+                --angle: 420deg;
+        }
+}
+
+.text-2 {
+        width: 70%;
+        font-size: 42px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        margin-top: 10rem;
+        border-radius: 10px;
+        border-bottom: 3px solid black;
+        border-top: 3px solid black;
+        visibility: hidden;
+        overflow: hidden;
+}
+
+.text-2-ann {
+        animation: text-2-ann 2s;
+        animation-fill-mode: forwards;
+
+}
+
+@keyframes text-2-ann {
+        from {
+                height: 0;visibility: hidden; display: none;
+        }
+        to {
+                height: 40rem;visibility: visible;
+        }
+}
+
+.bild-2 {
+        margin: 5rem;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px rgb(77, 0, 128, 0.5);
+        visibility: hidden;
+}
+
+.bild-2-ann {
+        animation: bild-2-ann 2s;
+        animation-fill-mode: forwards;
+
+}
+
+@keyframes bild-2-ann {
+        from {
+                visibility: hidden;right: 100rem;
+        }
+        to {
+                visibility: visible;right: 0;
+        }
+}
+
+.text-3 {
+        width: 70%;
+        font-size: 42px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        margin: 5rem;
+        border-radius: 10px;
+        border-right: 0px;
+        border-left: 0px;
+        border-top: 0px;
+        border-bottom: 3px solid black;
+        border-image: conic-gradient(from var(--angle), #ff8b8b,
+        #ffffff 0.1turn, #ffffff 0.35turn, #ff8b8b 0.25turn) 30;
+        overflow: hidden;
+        animation: borderRotate var(--d) linear infinite forwards;
+
+}

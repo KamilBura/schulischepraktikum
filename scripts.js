@@ -39,6 +39,24 @@ $(document).ready(function (){
         repeat: false,
         callbackFunction: function(elem, action){}
     });
+    $('.text-4').viewportChecker({
+        classToAddForFullView: 'text-4-ann',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.text-5').viewportChecker({
+        classToAddForFullView: 'text-4-ann',
+        offset: 800,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.text-6').viewportChecker({
+        classToAddForFullView: 'text-6-ann',
+        offset: 800,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
     $('.bild-1').viewportChecker({
         classToAdd: 'bild-1-ann',
         offset: 300,

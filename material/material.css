@@ -118,7 +118,6 @@ body::-webkit-scrollbar {
         font-weight: 500;
         margin-top: 10rem;
         border-radius: 10px;
-        border-bottom: 3px solid black;
         border-top: 3px solid black;
         visibility: hidden;
         overflow: hidden;
@@ -139,41 +138,12 @@ body::-webkit-scrollbar {
         }
 }
 
-@property --angle {
-        syntax: '<angle>';
-        initial-value: 90deg;
-        inherits: true;
-      }
-      
-@property --gradX {
-        syntax: '<percentage>';
-        initial-value: 50%;
-        inherits: true;
-      }
-      
-@property --gradY {
-        syntax: '<percentage>';
-        initial-value: 0%;
-        inherits: true;
-      }
-
-:root {
-	--d: 2500ms;
-	--angle: 90deg;
-	--gradX: 100%;
-	--gradY: 50%;
-	--c1: #e0dfe6;
-	--c2: #81a073;
-}
-
 .bild-1 {
         background-color: white;
         margin: 5rem;
         border-radius: 10px;
-        border: 0.55rem solid;
-        border-image: conic-gradient(from var(--angle), var(--c2),
-        var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 60;
-        animation: borderRotate var(--d) linear infinite forwards;
+        box-shadow: 1px 1px 10px rgba(0, 2, 128, 0.5);
+        visibility: hidden;
 }
 
 .bild-1-ann {
@@ -204,7 +174,6 @@ body::-webkit-scrollbar {
         font-weight: 500;
         margin-top: 10rem;
         border-radius: 10px;
-        border-bottom: 3px solid black;
         border-top: 3px solid black;
         visibility: hidden;
         overflow: hidden;
@@ -254,13 +223,95 @@ body::-webkit-scrollbar {
         font-weight: 500;
         margin: 5rem;
         border-radius: 10px;
-        border-right: 0px;
-        border-left: 0px;
-        border-top: 0px;
         border-bottom: 3px solid black;
-        border-image: conic-gradient(from var(--angle), #ff8b8b,
-        #ffffff 0.1turn, #ffffff 0.35turn, #ff8b8b 0.25turn) 30;
         overflow: hidden;
-        animation: borderRotate var(--d) linear infinite forwards;
+}
 
+.text-4 {
+        width: 70%;
+        font-size: 42px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        margin-top: 10rem;
+        border-radius: 10px;
+        border-top: 3px solid black;
+        visibility: hidden;
+        overflow: hidden;
+}
+
+.text-4-ann {
+        animation: text-4-ann 2s;
+        animation-fill-mode: forwards;
+}
+
+@keyframes text-4-ann {
+        from {
+                height: 0;visibility: hidden; display: none;
+        }
+        to {
+                height: 30rem;visibility: visible;
+        }
+}
+
+.text-5 {
+        width: 70%;
+        font-size: 42px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        margin-top: 10rem;
+        border-radius: 10px;
+        border-top: 3px solid black;
+        visibility: hidden;
+        overflow: hidden;
+}
+
+.text-5-ann {
+        animation: text-5-ann 2s;
+        animation-fill-mode: forwards;
+}
+
+@keyframes text-5-ann {
+        from {
+                height: 0;visibility: hidden; display: none;
+        }
+        to {
+                height: 50rem;visibility: visible;
+        }
+}
+
+.text-6 {
+        width: 70%;
+        font-size: 42px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        margin-top: 10rem;
+        border-radius: 10px;
+        border-top: 3px solid black;
+        visibility: hidden;
+        overflow: hidden;
+}
+
+.text-6-ann {
+        animation: text-6-ann 2s;
+        animation-fill-mode: forwards;
+}
+
+@keyframes text-6-ann {
+        from {
+                height: 0;visibility: hidden; display: none;
+        }
+        to {
+                height: 40rem;visibility: visible;
+        }
+}
+
+.text-7 {
+        width: 80%;
+        font-size: 42px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        margin: 5rem;
+        border-radius: 10px;
+        border-bottom: 3px solid black;
+        overflow: hidden;
 }

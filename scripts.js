@@ -34,26 +34,32 @@ $(document).ready(function (){
         callbackFunction: function(elem, action){}
     });
     $('.text-2').viewportChecker({
-        classToAddForFullView: 'text-2-ann',
-        offset: 800,
+        classToAdd: 'text-2-ann',
+        offset: 500,
         repeat: false,
         callbackFunction: function(elem, action){}
     });
     $('.text-4').viewportChecker({
-        classToAddForFullView: 'text-4-ann',
+        classToAdd: 'text-4-ann',
         offset: 300,
         repeat: false,
         callbackFunction: function(elem, action){}
     });
     $('.text-5').viewportChecker({
-        classToAddForFullView: 'text-4-ann',
-        offset: 800,
+        classToAdd: 'text-4-ann',
+        offset: 500,
         repeat: false,
         callbackFunction: function(elem, action){}
     });
     $('.text-6').viewportChecker({
-        classToAddForFullView: 'text-6-ann',
-        offset: 800,
+        classToAdd: 'text-6-ann',
+        offset: 500,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.text-8').viewportChecker({
+        classToAdd: 'text-8-ann',
+        offset: 500,
         repeat: false,
         callbackFunction: function(elem, action){}
     });
@@ -65,7 +71,7 @@ $(document).ready(function (){
     });
     $('.bild-2').viewportChecker({
         classToAdd: 'bild-2-ann',
-        offset: 800,
+        offset: 500,
         repeat: false,
         callbackFunction: function(elem, action){}
     });

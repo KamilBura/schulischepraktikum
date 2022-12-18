@@ -109,8 +109,6 @@ body::-webkit-scrollbar {
         }
 }
 
-* {border: 1px solid red;}
-
 .text-1 {
         width: 70%;
         font-size: 42px;
@@ -314,4 +312,30 @@ body::-webkit-scrollbar {
         border-radius: 10px;
         border-bottom: 3px solid black;
         overflow: hidden;
+}
+
+.text-8 {
+        width: 70%;
+        font-size: 42px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        margin-top: 5rem;
+        border-radius: 10px;
+        border-top: 3px solid black;
+        visibility: hidden;
+        overflow: hidden;
+}
+
+.text-8-ann {
+        animation: text-8-ann 2s;
+        animation-fill-mode: forwards;
+}
+
+@keyframes text-8-ann {
+        from {
+                height: 0;visibility: hidden; display: none;
+        }
+        to {
+                height: 40rem;visibility: visible;
+        }
 }
